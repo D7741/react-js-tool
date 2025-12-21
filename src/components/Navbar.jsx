@@ -11,15 +11,12 @@ const Navbar = () => {
         </div>
         {/* Links to */}
         <nav>
-          <ul className='flex space-x-4 align-center'>
+          <ul className='flex space-x-30 align-center'>
             <li className='hover:text-blue-300'><a href="#home">Home</a></li>
             <li className='hover:text-blue-300'><a href="#history">History</a></li>
             <li className='hover:text-blue-300'><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-
-        {/* Search Bar */}
-        <input type="text" placeholder="Search..." className='p-2 rounded-md bg-gray-700 text-white' />
 
         {/* Language Selector */}
         <select className='p-2 rounded-md bg-gray-700 text-white'>

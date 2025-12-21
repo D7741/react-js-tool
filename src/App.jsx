@@ -3,8 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import NavBar from './components/NavBar.jsx'
-import Hero from './components/Hero.jsx'
 import Home from './pages/home.jsx'
+import Footer from './components/Footer.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
       </Routes>
     </main>
+    <Footer />
   </BrowserRouter>
   )
 }
