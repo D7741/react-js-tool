@@ -1,5 +1,7 @@
 import React from 'react'
 import logo from '../assets/react.svg'
+import home from '../pages/home.jsx'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -12,20 +14,17 @@ const Navbar = () => {
         {/* Links to */}
         <nav>
           <ul className='flex space-x-30 align-center'>
-            <li className='hover:text-blue-300'><a href="#">Home</a></li>
-            <li className='hover:text-blue-300'><a href="#history">History</a></li>
-            <li className='hover:text-blue-300'><a href="#contact">Contact</a></li>
+            <li className='hover:text-blue-300'><Link to="/home">Home</Link></li>
+            <li className='hover:text-blue-300'><Link to="/billtrack">BillTrack</Link></li>
+            <li className='hover:text-blue-300'><Link to="/remcard">RemCard</Link></li>
           </ul>
         </nav>
 
         {/* Language Selector */}
-        <select className='p-2 rounded-md bg-gray-700 text-white'>
-            <option value="en">English</option>
-            <option value="es">Spanish</option>
-            <option value="fr">French</option>
-            <option value="de">German</option>
-            <option value="ch">Chinese</option>
-        </select>
+        <div className='flex space-x-8 items-center'>
+          <h4 className='hover:text-blue-300 cursor-pointer'>Sign in</h4>
+          <h4 className='hover:text-blue-300 cursor-pointer'>Log in</h4>
+        </div>
 
     </header>
   )
