@@ -23,9 +23,9 @@ const Home = () => {
   }
 
   return (
-    <section className="w-full h-screen bg-gray-100 flex px-12 py-10 gap-10 overflow-hidden">
+    <section className="w-full h-screen bg-gray-100 flex px-20 py-10 gap-10 overflow-hidden justify-center">
       {/* Left Screen*/}
-      <div className="w-1/2">
+      <div className="w-1/2 justify-center mt-30">
         <h1 className="text-4xl font-bold mb-4">Welcome to Your To-Do List</h1>
         <p className="text-lg mb-6 text-gray-600">Organize your tasks efficiently</p>
 
@@ -35,6 +35,13 @@ const Home = () => {
         >
           {showForm ? 'Hide Form' : 'Get Started'}
         </button>
+
+        {!showForm && (
+          <div className="mt-8 p-6">
+            <h1 className="text-xl font-bold">Are you always forgetting your tasks?</h1>
+            <p className="mt-4 text-black-500">Click "Get Started" to add your first task!</p>
+          </div>
+        )}
 
         {showForm && (
           <form onSubmit={handleSubmit} className="mt-8 flex flex-col gap-4">

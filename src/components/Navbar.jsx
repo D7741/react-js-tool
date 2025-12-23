@@ -12,7 +12,7 @@ const Navbar = () => {
         {/* Links to */}
         <nav>
           <ul className='flex space-x-30 align-center'>
-            <li className='hover:text-blue-300'><a href="#home">Home</a></li>
+            <li className='hover:text-blue-300'><a href="#">Home</a></li>
             <li className='hover:text-blue-300'><a href="#history">History</a></li>
             <li className='hover:text-blue-300'><a href="#contact">Contact</a></li>
           </ul>
