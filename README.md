@@ -17,6 +17,6 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 to run bill track page -- need to install few package:
-`npm install chart.js react-chartjs-2`
-`npm install react-icons`
-`npm install chart.js react-chartjs-2 react-icons`
+- `npm install chart.js react-chartjs-2`
+- `npm install react-icons`
+- `npm install chart.js react-chartjs-2 react-icons`
